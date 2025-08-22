@@ -70,7 +70,9 @@ jobs:
         run: npm run pretest
       - name: Install k6
         run: |
-          curl -s https://packagecloud.io/install/repositories/loadimpact/k6/script.deb.sh | sudo bash
+          curl -s https://repos.grafana.com/gpg.key | sudo apt-key add -
+          echo "deb https://repos.grafana.com/oss/deb stable main" | sudo tee /etc/apt/sources.list.d/grafana.list
+          sudo apt-get update
           sudo apt-get install k6
       - name: Run k6 tests
         run: k6 run dist/login.test.js
