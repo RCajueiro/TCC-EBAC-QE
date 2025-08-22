@@ -1,0 +1,34 @@
+{
+  "name": "performance",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/RCajueiro/TCC-EBAC-QE#readme",
+  "bugs": {
+    "url": "https://github.com/RCajueiro/TCC-EBAC-QE/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RCajueiro/TCC-EBAC-QE.git"
+  },
+  "license": "ISC",
+  "author": "Ramon Cajueiro",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "webpack",
+    "test": "k6 run dist/login.test.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.28.3",
+    "@babel/preset-env": "^7.28.3",
+    "@types/k6": "^1.2.0",
+    "babel-loader": "^10.0.0",
+    "core-js": "^3.45.1",
+    "k6": "^0.0.0",
+    "webpack": "^5.101.3",
+    "webpack-cli": "^6.0.1"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.1"
+  }
+}

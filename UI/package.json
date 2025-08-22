@@ -1,0 +1,25 @@
+{
+  "name": "ui",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/RCajueiro/TCC-EBAC-QE#readme",
+  "bugs": {
+    "url": "https://github.com/RCajueiro/TCC-EBAC-QE/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RCajueiro/TCC-EBAC-QE.git"
+  },
+  "license": "ISC",
+  "author": "Ramon Cajueiro",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run",
+    "cy:dash": "npx cypress run --record --key 5c32177e-43d6-41b7-adf8-da13b17852fb"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^9.9.0",
+    "cypress": "^14.5.4"
+  }
+}

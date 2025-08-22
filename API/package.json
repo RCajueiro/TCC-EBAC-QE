@@ -1,0 +1,29 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "Testes Automatizados de API",
+  "homepage": "https://github.com/RCajueiro/TCC-EBAC-QE#readme",
+  "bugs": {
+    "url": "https://github.com/RCajueiro/TCC-EBAC-QE/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RCajueiro/TCC-EBAC-QE.git"
+  },
+  "license": "ISC",
+  "author": "Ramon Cajueiro",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx jest"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^9.9.0",
+    "dotenv": "^17.2.1",
+    "joi": "^18.0.0",
+    "supertest": "^7.1.4"
+  },
+  "devDependencies": {
+    "jest-html-reporters": "^3.1.7"
+  }
+}
